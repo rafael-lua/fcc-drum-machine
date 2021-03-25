@@ -53,6 +53,14 @@ ul {
   align-items: center;
 }
 
+.pads-item:hover {
+  cursor: pointer;
+}
+
+.pads-item:active {
+  transform: scale(0.95);
+}
+
 .pads-key {
   font-size: 3em;
   font-weight: 700;
