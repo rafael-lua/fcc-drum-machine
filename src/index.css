@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -17,5 +17,52 @@ ul {
 
 .container {
   max-width: 1200px;
+  height: 100vh;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main app styles */
+.machine {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 50%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 1em;
+}
+
+.pads-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 125px);
+  grid-gap: 20px;
+}
+
+.pads-item {
+  background-color: black;
+  border: 3px solid darkorange;
+  border-radius: 20px;
+  color: white;
+  padding: 1em;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pads-key {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.audio-display {
+  margin-top: 2em;
+  text-align: center;
+}
+
+.audio-display hr {
+  margin-bottom: 0.25em;
 }

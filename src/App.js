@@ -1,9 +1,9 @@
-
+import Machine from "./components/Machine";
 
 function App() {
   return (
-    <div>
-      
+    <div className="container">
+      <Machine />
     </div>
   );
 }
