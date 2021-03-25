@@ -54,15 +54,15 @@ ul {
 }
 
 .pads-key {
-  font-size: 2em;
+  font-size: 3em;
   font-weight: 700;
 }
 
 .audio-display {
-  margin-top: 2em;
   text-align: center;
 }
 
-.audio-display hr {
-  margin-bottom: 0.25em;
+hr {
+  margin-top: 1.5em;
+  margin-bottom: 1em;
 }
