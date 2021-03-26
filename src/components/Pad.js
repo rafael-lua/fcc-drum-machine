@@ -47,10 +47,9 @@ const Pad = (props) => {
 
 
   return (
-    <div className="pads-item" onClick={handleClick}>
+    <div className="pads-item drum-pad" onClick={handleClick} id={props.padName}>
       <p className="pads-key">{props.padKey}</p>
-      <audio className="clip" id={props.padKey}>
-        <source src={props.audioFile} type="audio/wav"/>
+      <audio className="clip" id={props.padKey} src={props.audioFile} type="audio/wav">
         Your browser does not support the
         <code>audio</code> element.
       </audio>

@@ -17,7 +17,7 @@ const Machine = () => {
   const [display, setDisplay] = useState("Key...");
 
   return (
-    <div className="machine">
+    <div className="machine" id="drum-machine">
       <div className="pads-grid">
         <Pad setDisplay={setDisplay} padKey="Q" audioFile={audio_DrumKick} padName="Drum Kick"/>
         <Pad setDisplay={setDisplay} padKey="W" audioFile={audio_DrumSnare} padName="Drum Snare"/>
@@ -30,7 +30,7 @@ const Machine = () => {
         <Pad setDisplay={setDisplay} padKey="C" audioFile={audio_GuitarClap} padName="Guitar Clap"/>
       </div>
       <hr/>
-      <p className="audio-display"> {display} </p>
+      <p className="audio-display" id="display"> {display} </p>
     </div>
   )
 }
